@@ -23,12 +23,20 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
+    position: relative;
 }
 .form-container{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
     justify-items: center;
+}
+.form a{
+    text-decoration: none;
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 54px;
 }
 .logo{
     width: 150px;
@@ -73,6 +81,7 @@ body{
 .form{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .label{
     font-size: var(--sm);
@@ -87,6 +96,9 @@ input{
     padding: 6px;
     margin-bottom: 12px;
 }
+.input-email{
+    margin-bottom: 22px;
+}
 .primary-button{
     background-color: var(--hospital-green);
     border-radius: 8px;
@@ -98,6 +110,22 @@ input{
     font-weight: bold;
     height: 50px;
 }
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    /*desde aqui*/
+    position: absolute;
+    bottom: 20px;
+    width: 300px;
+    /*hasta aqui*/
+}
 .login-button{
     margin-top: 14px;
     margin-bottom: 30px;
@@ -105,5 +133,8 @@ input{
 @media (min-width: 640px){
     .logo{
         display: none;
+    }
+    .secondary-button{
+        position: unset;
     }
 }
