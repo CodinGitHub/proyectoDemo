@@ -5,28 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Login | YARDSale</title>
+    <title>My account | YARDSale</title>
 </head>
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title title-left">My account</h1>
             <form action="/" class="form">
+                <label for="name" class="label">Name</label>
+                <input id="name" type="text" class="input input-name" placeholder="Juan Perez">
+
                 <label for="email" class="label">Email address</address></label>
                 <input type="email" class="input input-email" id="email" placeholder="example@gmail.com">
 
-                <label for="login" class="label">Password</label>
-                <input type="password" class="input input-password" id="login" placeholder="********">
-                <input type="submit" value="Login" class="primary-button login-button">
+                <label for="password" class="label">Password</label>
+                <input id="password" type="password" class="input input-password" placeholder="********">
 
-                <a href="/">Forgot my password</a>
-
-                
+                <input type="submit" value="Save" class="primary-button save-button">
             </form>
-            <a class="button-anchor" href="/createAccount.html">
-                <button class="secondary-button signup-button" >Sign up</button>
-            </a>
-            
+
         </div>
     </div>
 </body>

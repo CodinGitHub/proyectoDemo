@@ -48,6 +48,10 @@ body{
     margin-bottom: 12px;
     text-align: center;
 }
+.title-left{
+    justify-self:start;
+    margin-bottom: 36px;
+}
 .subtitle{
     color: var(--very-light-pink);
     font-size: var(--md);
@@ -94,11 +98,11 @@ input{
     border-radius: 8px;
     font-size: var(--md);
     padding: 6px;
-    margin-bottom: 12px;
-}
-.input-email{
     margin-bottom: 22px;
 }
+/* .input-email{
+    margin-bottom: 22px;
+} */
 .primary-button{
     background-color: var(--hospital-green);
     border-radius: 8px;
@@ -126,15 +130,28 @@ input{
     width: 300px;
     /*hasta aqui*/
 }
+.save-button{
+    /*desde aqui*/
+    position: absolute;
+    bottom: 20px;
+    width: 300px;
+    /*hasta aqui*/
+}
 .login-button{
     margin-top: 14px;
     margin-bottom: 30px;
+}
+.button-anchor{
+    width: 100%;
 }
 @media (min-width: 640px){
     .logo{
         display: none;
     }
     .secondary-button{
+        position: unset;
+    }
+    .save-button{
         position: unset;
     }
 }
