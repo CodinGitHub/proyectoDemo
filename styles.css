@@ -196,6 +196,33 @@ input{
     width: 35px;
     height: 35px;
 }
+.desktop-menu{
+    width: 140px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+.desktop-menu ul li{
+    text-align: end;
+    list-style: none;
+    font-weight: bold;
+}
+.desktop-menu ul li:last-child{
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+    font-weight: unset;
+}
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+.desktop-menu ul li a{
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+    margin-bottom: 20px;
+}
 @media (min-width: 640px){
     .form{
         justify-content: unset;
